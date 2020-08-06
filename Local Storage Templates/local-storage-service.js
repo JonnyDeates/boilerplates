@@ -8,13 +8,23 @@ const LocalDataService = {
     getLocalData(local) {
         return window.localStorage.getItem(local)
     },
+    getSafeLocalData(local){
+        try {
+            return window.localStorage.getItem(local)
+        } catch (e) {
+            console.log(e);
+        }
+    },
     clearLocalData(local) {
         window.localStorage.removeItem(local)
     },
     hasLocalData(local) {
         return !!this.getLocalData(local)
     },
+    hasSafeLocalData(local) {
+        return !!this.getSafeLocalData(local)
+    },
 };
-// Local is the Local Storage Name
+// Local is the Local Storage Data Packet Name
 // Data is the data object being stored
 export default LocalDataService
