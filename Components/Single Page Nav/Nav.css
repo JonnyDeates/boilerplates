@@ -1,0 +1,19 @@
+.nav {
+    position: fixed;
+    width: 100vw;
+    background-color: #ffffffee;
+    z-index: 4;
+    display: flex;
+    justify-content: space-evenly;
+    animation: 1s __slideInDown ease-out forwards;
+    box-shadow: 1px 2px 1px rgba(0,0,0,.2);
+}
+.nav > li {
+    display: inline;
+    cursor: pointer;
+    text-shadow: 1px 1px 2px #00000088;
+    padding: 16px 4px;
+}
+.nav > li:hover{
+    background-color: #eeeeeeee;
+}
