@@ -45,6 +45,7 @@ export default class Fish extends Component {
             ]
         }
     }
+
     componentDidMount(){
         if(this.props.fishCount){
             this.setState({fishCount: this.props.fishCount})
