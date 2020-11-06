@@ -1,0 +1,18 @@
+.dropdown {
+    position: relative;
+    display: block;
+
+}
+.dropdown > p {
+    cursor: pointer
+}
+.dropdown-content {
+    position: relative;
+    z-index: 1;
+    overflow: hidden;
+    transition: height 1s ease-in-out, max-height 1s ease-in-out;
+}
+.dropdown-content ul {
+    list-style-type: none;
+    padding: 0;
+}
