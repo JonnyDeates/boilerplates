@@ -74,7 +74,7 @@ class ImageCoursel extends React.Component {
                 </section>
                 <section className='image-slider'>{this.state.imageUrls.map((img, i) => <div key={i} onClick={() =>
                     this.setState({currentImageIndex: i})}
-                                                                                             className={`${(i === this.state.currentImageIndex) ? 'circle-active' : ''}`}/>)}</section>
+                    className={`${(i === this.state.currentImageIndex) ? 'circle-active' : ''}`}/>)}</section>
             </>
 
         );

@@ -1,7 +1,7 @@
 import react, {Component} from 'react';
 import './PopDropDown.css';
 
-export default class DropDown extends Component {
+export default class PopDropDown extends Component {
     constructor(props){
         super(props);
         this.state = {
